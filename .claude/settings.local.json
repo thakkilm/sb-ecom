@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__github__get_me",
+      "mcp__github__search_repositories",
+      "mcp__github__get_file_contents",
+      "mcp__github__push_files",
+      "mcp__github__create_or_update_file",
+      "Bash(./mvnw -q compile)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "Bash(./mvnw -q -o dependency:resolve)",
+      "Bash(./mvnw -q dependency:resolve)",
+      "Bash(./mvnw -q validate)",
+      "Read(//Users/maheshthakkilapati/.m2/repository/org/springframework/boot/**)",
+      "Bash(brew upgrade *)",
+      "Bash(./mvnw -q dependency:tree -Dincludes=org.projectlombok:lombok)",
+      "Bash(./mvnw dependency:tree -Dincludes=org.projectlombok:lombok)",
+      "Bash(./mvnw dependency:tree -Dincludes=org.springframework.boot:spring-boot-starter-validation,org.hibernate.validator:hibernate-validator)",
+      "Bash(./mvnw dependency:tree -Dincludes=org.modelmapper:modelmapper)",
+      "Bash(claude mcp *)",
+      "mcp__github__list_branches"
+    ]
+  }
+}
