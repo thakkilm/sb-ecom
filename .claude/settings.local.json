@@ -19,7 +19,14 @@
       "Bash(./mvnw dependency:tree -Dincludes=org.springframework.boot:spring-boot-starter-validation,org.hibernate.validator:hibernate-validator)",
       "Bash(./mvnw dependency:tree -Dincludes=org.modelmapper:modelmapper)",
       "Bash(claude mcp *)",
-      "mcp__github__list_branches"
+      "mcp__github__list_branches",
+      "Bash(git branch *)",
+      "Bash(git merge *)",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(grep -E \"HELP.md|CLAUDE.md|images/|mvnw$\")",
+      "Bash(git rm *)"
     ]
   }
 }
