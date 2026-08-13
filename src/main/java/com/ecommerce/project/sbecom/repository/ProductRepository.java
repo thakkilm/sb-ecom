@@ -2,6 +2,8 @@ package com.ecommerce.project.sbecom.repository;
 
 import com.ecommerce.project.sbecom.model.Category;
 import com.ecommerce.project.sbecom.model.Product;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,9 +12,9 @@ import java.util.Optional;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
-    List<Product> findByCategoryOrderByPriceAsc(Optional<Category> category);
+    Page<Product> findByCategoryOrderByPriceAsc(Optional<Category> category, Pageable pageable);
 
-    List<Product> findByProductNameLikeIgnoreCase(String s);
+    Page<Product> findByProductNameLikeIgnoreCase(String s, Pageable pageable);
 
     Product findByProductId(Long productId);
 }
