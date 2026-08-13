@@ -84,7 +84,7 @@ public class ProductServiceImpl implements ProductService {
        productResponse.setContent(productDTOS);
         productResponse.setPageNumber(pageProducts.getNumber());
         productResponse.setPageSize(pageProducts.getSize());
-        productResponse.setTotalPages((int) pageProducts.getTotalElements());
+        productResponse.setTotalElements(pageProducts.getTotalElements());
         productResponse.setTotalPages(pageProducts.getTotalPages());
         productResponse.setLastPage(pageProducts.isLast());
         return productResponse;
@@ -105,7 +105,7 @@ public class ProductServiceImpl implements ProductService {
         productResponse.setContent(productDTOS);
         productResponse.setPageNumber(pageProducts.getNumber());
         productResponse.setPageSize(pageProducts.getSize());
-        productResponse.setTotalPages((int) pageProducts.getTotalElements());
+        productResponse.setTotalElements(pageProducts.getTotalElements());
         productResponse.setTotalPages(pageProducts.getTotalPages());
         productResponse.setLastPage(pageProducts.isLast());
         return productResponse;
@@ -126,7 +126,7 @@ public class ProductServiceImpl implements ProductService {
         productResponse.setContent(productDTOS);
         productResponse.setPageNumber(pageProducts.getNumber());
         productResponse.setPageSize(pageProducts.getSize());
-        productResponse.setTotalPages((int) pageProducts.getTotalElements());
+        productResponse.setTotalElements(pageProducts.getTotalElements());
         productResponse.setTotalPages(pageProducts.getTotalPages());
         productResponse.setLastPage(pageProducts.isLast());
         return productResponse;

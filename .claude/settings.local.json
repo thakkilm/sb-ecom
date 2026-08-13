@@ -26,7 +26,8 @@
       "Bash(git add *)",
       "Bash(git commit *)",
       "Bash(grep -E \"HELP.md|CLAUDE.md|images/|mvnw$\")",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "Bash(git push *)"
     ]
   }
 }
