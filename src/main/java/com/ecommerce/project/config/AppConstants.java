@@ -9,4 +9,6 @@ public class AppConstants {
     public static final String SORT_PRODUCTS_BY = "productId";
 
     public static final String SORT_ORDER = "asc";
+    public static final String SORT_DIR = "asc";
+
 }
