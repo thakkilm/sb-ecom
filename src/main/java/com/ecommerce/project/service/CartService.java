@@ -8,15 +8,28 @@ import java.util.List;
 
 @Service
 public interface CartService {
-    public CartDTO  addProductToCart(Long productId, Integer quantity) ;
+//    public CartDTO  addProductToCart(Long productId, Integer quantity) ;
+//
+//    List<CartDTO> getAllCarts();
+//
+//    CartDTO getCart(String emailId, Long cartId);
+//
+//    @Transactional
+//    CartDTO updateProductQuantityInCart(Long productId, Integer delete);
+//
+//
+//    String deleteProductFromCart(Long cartId, Long productId);
+
+    CartDTO addProductToCart(Long productId, Integer quantity);
 
     List<CartDTO> getAllCarts();
 
     CartDTO getCart(String emailId, Long cartId);
 
     @Transactional
-    CartDTO updateProductQuantityInCart(Long productId, Integer delete);
-
+    CartDTO updateProductQuantityInCart(Long productId, Integer quantity);
 
     String deleteProductFromCart(Long cartId, Long productId);
+
+    void updateProductInCarts(Long cartId, Long productId);
 }

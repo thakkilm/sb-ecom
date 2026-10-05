@@ -6,7 +6,7 @@ import com.ecommerce.project.exceptions.ResourceNotFoundException;
 import com.ecommerce.project.model.Category;
 import com.ecommerce.project.payload.CategoryDTO;
 import com.ecommerce.project.payload.CategoryResponse;
-import com.ecommerce.project.repository.CategoryRespository;
+import com.ecommerce.project.repository.CategoryRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -24,7 +24,7 @@ public class CategoryServiceImpl implements CategoryService {
     private ModelMapper modelMapper;
 
     @Autowired
-    private CategoryRespository categoryRespository;
+    private CategoryRepository categoryRespository;
 
     @Override
     public CategoryResponse getCategoryList(Integer pageNumber, Integer pageSize,String sortBy,String sortOrder) {

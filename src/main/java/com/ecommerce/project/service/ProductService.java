@@ -9,18 +9,17 @@ import java.io.IOException;
 
 @Service
 public interface ProductService {
-    ProductResponse addProduct(ProductDTO productDto, Long categoryId);
+    ProductDTO addProduct(Long categoryId, ProductDTO product);
 
     ProductResponse getAllProducts(Integer pageNumber, Integer pageSize, String sortBy, String sortOrder);
 
-    ProductResponse getProductsByCategoryId(Long categoryId, Integer pageNumber, Integer pageSize, String sortBy, String sortOrder);
+    ProductResponse searchByCategory(Long categoryId, Integer pageNumber, Integer pageSize, String sortBy, String sortOrder);
 
-    ProductResponse searchProductByKeyword(String keyword,Integer pageNumber,Integer pageSize, String sortBy, String sortOrder);
+    ProductResponse searchProductByKeyword(String keyword, Integer pageNumber, Integer pageSize, String sortBy, String sortOrder);
 
-    ProductDTO updateProductByProductId(ProductDTO productDTO ,Long productId);
+    ProductDTO updateProduct(Long productId, ProductDTO product);
 
-    ProductDTO deleteProductByProductId(Long productId);
+    ProductDTO deleteProduct(Long productId);
 
-    ProductDTO udpateProductImage(Long productId, MultipartFile multipartFile) throws IOException;
-
+    ProductDTO updateProductImage(Long productId, MultipartFile image) throws IOException;
 }
